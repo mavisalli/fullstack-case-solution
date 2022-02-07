@@ -24,12 +24,7 @@ Create environment file (.env) for your config information of your database and 
 #### Postgres config
 
 ```
-TYPE=
-HOST=
-PORT=
-USER=
-PASSWORD=
-DATABASE=
+DB_CONNECTION_STRING= postgresql://username:password@host:port/dbname
 ```
 
 Install dependencies and run app server
