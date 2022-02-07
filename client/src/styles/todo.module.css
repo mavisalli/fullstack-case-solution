@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: azure;
+  text-align: center;
+}
+
+.title {
+  width: 700px;
+  height: 50px;
+}
+
+.item {
+  border: solid 2px;
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  height: 25px;
+}
+
+.edit {
+  align-items: flex-end;
+}
+
+.table {
+  align-items: center;
+  width: 850px;
+  text-align: center;
+  position: relative;
+  left: 20%;
+}
+
+.detail {
+  width: 200px;
+}
+
+.button {
+  background-color: black;
+  color: azure;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
