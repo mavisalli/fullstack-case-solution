@@ -1,4 +1,4 @@
-🔎 This is a to do list app where you can create a tasks, update task status or task name.
+🔎 This is a to do list app where you can create a task, update task status or task name.
 
 Technologies and Tools I use:
 
