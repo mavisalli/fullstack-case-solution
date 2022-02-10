@@ -69,7 +69,7 @@ function TodoForm() {
   };
 
   return (
-    <div className={styles}>
+    <div>
       <h1>To Do List</h1>
       <div>
         <form onSubmit={addTodo}>
