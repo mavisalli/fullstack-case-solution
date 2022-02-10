@@ -7,8 +7,6 @@ import { BsPencilFill } from "react-icons/bs";
 function TodoItem({ todo, editTodos }) {
   const [status, setStatus] = useState(todo.completed);
 
-  console.log(status);
-
   async function handleChange(e) {
     setStatus(e.target.checked);
 
