@@ -8,6 +8,8 @@ Technologies and Tools I use:
 
 :ballot_box_with_check: Database: PostgreSQL
 
+:ballot_box_with_check: Database: Docker
+
 ### Usage
 
 Clone the repository
@@ -30,8 +32,9 @@ DB_CONNECTION_STRING= postgresql://username:password@host:port/dbname
 Install dependencies and run app server
 
 ```
+cd server
 npm install
-npm run start
+npm run dev
 ```
 
 For Frontend
@@ -39,7 +42,22 @@ For Frontend
 ```
 cd client
 npm install
-npm start
+npm run dev
 ```
 
 Navigate to http://localhost:3000, if you're seeing to do list, everything is OK!
+
+### Docker Usage
+
+From the root directory of the project, all your have to do is type:
+
+```
+docker-compose up
+
+```
+
+Navigate to http://localhost:3000, if you're seeing to do list, everything is OK!
+
+### Swagger
+
+You can access the api documentation by typing http://localhost:5000/api-docs/ in the url.
