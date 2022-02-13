@@ -6,7 +6,7 @@ const {
   updateStatus,
 } = require("../controllers/taskController");
 
-const schemas = require("../handlers/taskValidation");
+const schemas = require("../validations/taskValidation");
 const validate = require("../middlewares/validate");
 
 const router = express.Router();
