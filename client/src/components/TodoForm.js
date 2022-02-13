@@ -57,14 +57,7 @@ function TodoForm() {
 
   const renderTodos = () => {
     return todos.map((todo, i) => {
-      return (
-        <TodoItem
-          key={i}
-          todo={todo}
-          editTodos={editTodos}
-          className={styles.table}
-        />
-      );
+      return <TodoItem key={i} todo={todo} editTodos={editTodos} />;
     });
   };
 
@@ -80,13 +73,13 @@ function TodoForm() {
               id="title"
               value={todoTitle}
               onChange={(e) => setTodoTitle(e.target.value)}
-              className={styles.title}
+              className={styles.input}
               placeholder="TITLE"
             />
           </div>
           <div>
             <input
-              className={styles.title}
+              className={styles.input}
               required
               type="text"
               id="description"
@@ -99,13 +92,13 @@ function TodoForm() {
           <button className={styles.button}>Add Item</button>
         </form>
       </div>
-      <Table className={styles.table}>
+      <Table>
         <Thead>
           <Tr>
-            <Th>Title</Th>
-            <Th>Description</Th>
-            <Th>Completed</Th>
-            <Th>Edit</Th>
+            <Th className={styles.firstColumnName}>Title</Th>
+            <Th className={styles.secondColumnName}>Description</Th>
+            <Th className={styles.thirdColumnName}>Completed</Th>
+            <Th className={styles.fourthColumnName}>Edit</Th>
           </Tr>
         </Thead>
       </Table>

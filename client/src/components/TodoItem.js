@@ -24,10 +24,10 @@ function TodoItem({ todo, editTodos }) {
       <Table variant="simple" className={styles.table}>
         <Tbody>
           <Tr className={styles.item}>
-            <Td className={styles.detail}>{todo.title}</Td>
-            <Td className={styles.detail}>{todo.description}</Td>
-            <Td className={styles.detail}>
-              <label style={{ marginLeft: "20px" }}>
+            <Td className={styles.detailTitle}>{todo.title}</Td>
+            <Td className={styles.detailDesc}>{todo.description}</Td>
+            <Td className={styles.checkbox}>
+              <label>
                 <input
                   type="checkbox"
                   checked={status}
@@ -35,12 +35,8 @@ function TodoItem({ todo, editTodos }) {
                 />
               </label>
             </Td>
-            <Td className={styles.detail}>
-              {" "}
-              <button
-                style={{ marginLeft: "20px" }}
-                onClick={() => editTodos(todo)}
-              >
+            <Td className={styles.edit}>
+              <button onClick={() => editTodos(todo)}>
                 <BsPencilFill></BsPencilFill>
               </button>
             </Td>
