@@ -1,0 +1,110 @@
+swagger: "2.0"
+info:
+  title: To-do list API
+  description: This is my case-solution API Documentation
+  version: 1.0
+  contact:
+  liscence:
+    name: Apache 2.0
+    url: "http://www.apache.org/liscences/LIS"
+  servers:
+    -url: http://localhost:5000
+    description: This is my local Server
+schemes: [http]
+tags:
+  name: Tasks
+  description: The tasks managing API
+
+paths:
+  /tasks:
+    post:
+      summary: Create a new Task
+      tags: [Tasks]
+      produces:
+        - application/json
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: "#/components/schemas/Task"
+      responses:
+        "200":
+          description: Task was created successfully !
+
+    get:
+      summary: show all task records
+      tags: [Tasks]
+      produces:
+        - application/json
+      consumes:
+        - application/json
+      responses:
+        "200":
+          description: OK
+
+  /tasks/{id}:
+    put:
+      summary: change the task detail by task id
+      tags: [Tasks]
+      produces:
+        - application/json
+      consumes:
+        - application/json
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: Task id
+          type: string
+        - in: body
+          name: body
+          required: true
+          description: Update task info
+          schema:
+            $ref: "#/components/schemas/Task"
+      responses:
+        "201":
+          description: Task was updated successfully!
+
+  /tasks/status/{id}:
+    put:
+      summary: change the status of task by task id
+      tags: [Tasks]
+      produces:
+        - application/json
+      consumes:
+        - application/json
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: Task id
+          type: string
+        - in: body
+          name: body
+          required: true
+          description: Update task status
+          schema:
+            $ref: "#/components/schemas/Status"
+      responses:
+        "201":
+          description: Task Status was updated successfully!
+
+components:
+  schemas:
+    Task:
+      type: object
+      properties:
+        title:
+          type: string
+        description:
+          type: string
+
+    Status:
+      type: object
+      properties:
+        completed:
+          type: boolean
