@@ -3,35 +3,16 @@ body {
   padding: 0;
   background-color: azure;
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.title {
+form {
+  margin-bottom: 35px;
+}
+
+.input {
   width: 700px;
   height: 50px;
-}
-
-.item {
-  border: solid 2px;
-  display: flex;
-  justify-content: space-between;
-  width: 900px;
-  height: 25px;
-}
-
-.edit {
-  align-items: flex-end;
-}
-
-.table {
-  align-items: center;
-  width: 850px;
-  text-align: center;
-  position: relative;
-  left: 20%;
-}
-
-.detail {
-  width: 200px;
 }
 
 .button {
@@ -41,4 +22,66 @@ body {
   height: 50px;
   border-radius: 5px;
   margin-top: 10px;
+}
+
+.table {
+  align-items: center;
+  width: 885px;
+  text-align: center;
+  position: relative;
+  left: 20%;
+}
+
+.item {
+  border: solid 2px;
+  border-radius: 10px;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  justify-content: space-between;
+  width: 900px;
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgb(158, 172, 172);
+  margin-top: 10px;
+}
+
+.detailTitle {
+  width: 200px;
+  color: black;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.detailDesc {
+  width: 200px;
+  color: black;
+  margin-right: 90px;
+}
+
+.checkbox {
+  margin-right: 90px;
+}
+
+.edit {
+  margin-right: 10px;
+}
+
+.firstColumnName {
+  position: relative;
+  left: 370px;
+}
+.secondColumnName {
+  position: absolute;
+  margin-left: 610px;
+}
+
+.thirdColumnName {
+  position: absolute;
+  margin-left: 910px;
+}
+.fourthColumnName {
+  position: absolute;
+  margin-left: 1122px;
 }
