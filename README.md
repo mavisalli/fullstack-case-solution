@@ -53,7 +53,6 @@ From the root directory of the project, all your have to do is type:
 
 ```
 docker-compose up
-
 ```
 
 Navigate to http://localhost:3000, if you're seeing to do list, everything is OK!
