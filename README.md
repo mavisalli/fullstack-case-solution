@@ -8,7 +8,7 @@ Technologies and Tools I use:
 
 :ballot_box_with_check: Database: PostgreSQL
 
-:ballot_box_with_check: Database: Docker
+:ballot_box_with_check: Docker
 
 ### Usage
 
